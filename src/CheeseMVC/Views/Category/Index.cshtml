@@ -1,0 +1,13 @@
+﻿@{ 
+    ViewData["Title"] = "Categories";
+}
+
+<h1>Categories</h1>
+
+<ul>
+    @foreach (var categories in ViewBag.categories)
+    {
+        <li>@categories.Name</li>
+    }
+</ul>
+<p><a asp-controller="Category" asp-action="Add">Add Category</a></p>
